@@ -92,7 +92,8 @@ li a {
 
 #footernav  li:hover{
 
-  background-color: red;
+background-color:brown;
+height:50px;
 
 }
 
@@ -138,7 +139,6 @@ a:hover{
   list-style-type: none;
   background-color: rgba(129, 49, 49, 0.8) !important;
   outline-style: dotted;
-  position:absolute; 
 
 }
 
