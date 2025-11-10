@@ -81,6 +81,31 @@ li a {
   text-decoration: none;
 }
 
+
+/*Footer Navigation*/
+
+#footernav li{
+
+
+}
+
+
+#footernav  li:hover{
+
+  background-color: red;
+
+}
+
+#footernav {
+
+
+}
+
+#footernav li a {
+
+}
+/* ---- Footer Navigation End */
+
 a:link, a:visited{
 
   color: rgb(0, 0, 0);
@@ -101,6 +126,7 @@ a:hover{
   min-height: 300px;
   padding-top:0%;
   padding:10%;
+  padding-top: 2%;
 
 
 }
