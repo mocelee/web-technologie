@@ -1,14 +1,16 @@
 html{
 
-background-color: rgba(209, 209, 209, 0.753);
+  background-image: url("../img/saentis.jpg");
+  background-repeat: no-repeat, repeat;
+  background-size: 100%;
 
 
 }
 
 body{
 
-outline-style:dashed;
-background-color: rgba(129, 49, 49, 0.8)
+  outline-style:dashed;
+  background-color: rgba(129, 49, 49, 0.1)
 
 
 }
@@ -19,35 +21,16 @@ text-align:center;
 
 }
 
-a:link, a:visited{
 
-    color: rgb(0, 0, 0);
+header{
 
-}
-
-a:hover{
-
-    color:rgb(250, 248, 248);
+line-height: 2em;
+font-size: 25px;
+text-align: center;
+background-color: rgba(255, 255, 255, 0);
 
 }
 
-#div-sec{
-
-    width:50%;
-    margin-left:15%;
-
-}
-
-#div-footer{
-
-    width: 100%;
-    margin-left:0%;
-    list-style-type: none;
-    background-color: rgba(129, 49, 49, 0.8) !important;
-    outline-style: dotted;
-    position:absolute; 
-
-}
 
 #div-head{
 
@@ -75,14 +58,6 @@ height:50px;
 
 }
 
-header{
-
-line-height: 2em;
-font-size: 25px;
-text-align: center;
-background-color: white;
-
-}
 
 ul {
 
@@ -106,10 +81,40 @@ li a {
   text-decoration: none;
 }
 
-#div-sec{
+a:link, a:visited{
 
-  background-color: rgb(255, 255, 255);
-  min-height: 300px;
-  padding:10%;
+  color: rgb(0, 0, 0);
 
 }
+
+a:hover{
+
+  color:rgb(250, 248, 248);
+
+}
+
+#div-sec{
+
+  width:50%;
+  margin-left:15%;
+  background-color: rgba(255, 255, 255, 0.336);
+  min-height: 300px;
+  padding-top:0%;
+  padding:10%;
+
+
+}
+
+#div-footer{
+
+  width: 100%;
+  margin-left:0%;
+  list-style-type: none;
+  background-color: rgba(129, 49, 49, 0.8) !important;
+  outline-style: dotted;
+  position:absolute; 
+
+}
+
+
+
