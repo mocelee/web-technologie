@@ -1,5 +1,91 @@
 body{
 
-background-color: red;
+outline-style:dashed;
 
+}
+
+title{
+
+text-align:center;
+
+}
+
+a:link, a:visited{
+
+    color: rgb(0, 0, 0);
+
+}
+
+a:hover{
+
+    color:rgb(250, 248, 248);
+
+}
+
+#div-sec{
+
+    width:50%;
+    margin-left:25%;
+
+}
+
+#div-footer{
+
+    width: 100%;
+    margin-left:0%;
+    list-style-type: none;
+    background-color: rgba(129, 49, 49, 0.8) !important;
+    outline-style: dotted;
+
+}
+
+#div-head{
+
+  
+    width: 100%;
+    margin-left:0%;
+    background-color: rgba(129, 49, 49, 0.8) !important;
+    outline-style: dotted;
+
+
+}
+
+ul li{
+
+    list-style-type:none;
+    display:block;
+    width:25%;
+}
+
+
+ul li:hover{
+
+background-color:brown;
+height:50px;
+
+}
+
+.oi-regular {
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
 }
