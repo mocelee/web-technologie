@@ -1,15 +1,28 @@
+*{
+
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+
+
+
+/* Standard-Elemente*/
+
 html{
 
   background-image: url("../img/saentis.jpg");
   background-repeat: no-repeat, repeat;
   background-size: 100%;
+  background-position: fixed;
 
 
 }
 
+
 body{
 
-  outline-style:dashed;
+  /*outline-style:dashed;*/
   background-color: rgba(129, 49, 49, 0.1)
 
 
@@ -31,22 +44,29 @@ background-color: rgba(255, 255, 255, 0);
 
 }
 
+/* Div Header */
 
 #div-head{
 
   
-    width: 100%;
-    margin-left:0%;
-    background-color: rgba(129, 49, 49, 0.8) !important;
-    outline-style: dotted;
+width: 100%;
+margin-left:0%;
+background-color: rgba(129, 49, 49, 0.8) !important;
+/*outline-style: dotted;*/
 
 
 }
+
+/* Menü */
 
 ul li:hover{
 
 background-color:brown;
 height:50px;
+transform: scale(1.5);
+transition: transform 0.3s;
+
+  
 
 }
 
@@ -76,43 +96,23 @@ li a {
   text-decoration: none;
 }
 
-
-/*Footer Navigation*/
-
-#footernav li{
-
-
-}
-
-
-#footernav  li:hover{
-
-background-color:brown;
-height:50px;
-
-}
-
-#footernav {
-
-
-}
-
-#footernav li a {
-
-}
-/* ---- Footer Navigation End */
+/* Links */
 
 a:link, a:visited{
 
-  color: rgb(0, 0, 0);
+  color:rgb(250, 250, 250);
 
 }
 
 a:hover{
 
-  color:rgb(250, 248, 248);
+  color:rgb(250, 250, 250);
 
 }
+
+
+
+/* Div Section  */
 
 #div-sec{
 
@@ -127,15 +127,69 @@ a:hover{
 
 }
 
+
+/* Footer Navigation */
+
+#footernav li{
+
+
+}
+
+
+#footernav  li:hover{
+
+background-color:brown;
+height:50px;
+transform: scale(1.5);
+transition: transform 0.3s;
+
+}
+
+#footernav {
+
+
+}
+
+#footernav li a {
+
+}
+
+
 #div-footer{
 
   width: 100%;
   margin-left:0%;
   list-style-type: none;
   background-color: rgba(129, 49, 49, 0.8) !important;
-  outline-style: dotted;
 
 }
 
+/*Responsive*/
 
+/* Sobald der Bildschirm 768px oder schmaler ist: */
+@media (max-width: 1064px) {
+  html {
+    /* Hier überschreiben wir das Bild */
+    background-image: none;
+    
+    /* Du kannst auch andere Dinge ändern, z.B. die Farbe */
+    background-color: brown; 
+  }
 
+  li{
+
+    width: 100%;
+
+  }
+
+}
+
+@media (max-width: 50%) {
+
+  #feedback-kommentar {
+
+  width: 50%;
+
+  }
+
+}
