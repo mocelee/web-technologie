@@ -1,0 +1,36 @@
+body{
+
+}
+
+#lebenslauf{
+
+
+}
+
+#lebenslauf table{
+
+border-color: red;
+border-style: dotted;
+border-width: 1px;
+width: 100%;
+
+
+}
+
+#lebenslauf th{
+
+text-align: left;
+height: 50px;
+background-color: brown;
+color: white;
+
+}
+
+#lebenslauf td{
+
+text-align: left;
+height: 100%;
+background-color: white;
+color: brown;
+
+}

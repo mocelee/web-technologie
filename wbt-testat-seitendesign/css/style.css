@@ -11,20 +11,20 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 
 html{
 
-  /*background-image: url("../img/background-1.jpg");
+  background-image: url("../img/saentis.jpg");
   background-repeat: no-repeat, repeat;
   background-size: 100%;
-  background-position: fixed;*/
-  background-color: rgb(219, 219, 219);
+  background-position: fixed;
+
 
 }
 
 
 body{
 
-/*outline-style:dashed;*/
-/*background-color: rgba(0, 0, 0, 0.8);*/
-margin-top: 0px;
+  /*outline-style:dashed;*/
+  background-color: rgba(129, 49, 49, 0.1)
+
 
 }
 
@@ -41,7 +41,7 @@ line-height: 2em;
 font-size: 25px;
 text-align: center;
 background-color: rgba(255, 255, 255, 0);
-position: sticky;
+
 }
 
 /* Div Header */
@@ -51,10 +51,9 @@ position: sticky;
   
 width: 100%;
 margin-left:0%;
-background-color: white;
-border-bottom-style: solid;
-border-bottom-color: black;
-position: sticky;
+background-color: rgba(129, 49, 49, 0.8) !important;
+/*outline-style: dotted;*/
+
 
 }
 
@@ -62,9 +61,12 @@ position: sticky;
 
 ul li:hover{
 
+background-color:brown;
 height:50px;
-transform: scale(1.3);
-transition: transform 0.3s; 
+transform: scale(1.5);
+transition: transform 0.3s;
+
+  
 
 }
 
@@ -98,13 +100,13 @@ li a {
 
 a:link, a:visited{
 
-  color:rgb(0, 0, 0);
+  color:rgb(250, 250, 250);
 
 }
 
 a:hover{
 
-  color:rgb(214, 211, 6);
+  color:rgb(250, 250, 250);
 
 }
 
@@ -116,7 +118,7 @@ a:hover{
 
   width:50%;
   margin-left:15%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.336);
   min-height: 300px;
   padding-top:0%;
   padding:10%;
@@ -136,6 +138,7 @@ a:hover{
 
 #footernav  li:hover{
 
+background-color:brown;
 height:50px;
 transform: scale(1.5);
 transition: transform 0.3s;
@@ -157,7 +160,7 @@ transition: transform 0.3s;
   width: 100%;
   margin-left:0%;
   list-style-type: none;
-  background-color: white;
+  background-color: rgba(129, 49, 49, 0.8) !important;
 
 }
 
@@ -166,11 +169,11 @@ transition: transform 0.3s;
 /* Sobald der Bildschirm 768px oder schmaler ist: */
 @media (max-width: 1064px) {
   html {
-    
+    /* Hier überschreiben wir das Bild */
     background-image: none;
     
-   
-    background-color: white; 
+    /* Du kannst auch andere Dinge ändern, z.B. die Farbe */
+    background-color: brown; 
   }
 
   li{
