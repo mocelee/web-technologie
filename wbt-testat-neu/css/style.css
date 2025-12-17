@@ -20,7 +20,7 @@ html{
 
 body{
 
-  margin: 0; /* Sauberer Reset */
+  margin: 0;
   min-height: 100%;
   overflow-x: hidden;
   
@@ -39,7 +39,9 @@ header{
   font-size: 25px;
   text-align: center;
 }
+
 /*Schrift */
+
 .oi-regular {
   font-family: "Oi", serif;
   font-weight: 400;
@@ -52,6 +54,16 @@ header{
   font-style: normal;
 }
 
+/* Horizontal Line */
+
+hr{
+
+color: white;
+width:100%;
+border:0.5px, solid;
+
+}
+
 /* Div Header */
 
 #div-head{
@@ -59,24 +71,18 @@ header{
   position: fixed; /* Fixiert auf dem Bildschirm */
   top: 0;
   left: 0;
-  width: 20%;      /* Breite der Sidebar */
+  width: 20%;     
   height: 100vh;   /* Volle Bildschirmhöhe */
   background-color: white;
   z-index: 1000;
-  
-  /* Flexbox um den Inhalt in der Sidebar zu zentrieren */
+    /* Flexbox um den Inhalt in der Sidebar zu zentrieren */
   display: flex;
   flex-direction: column;
   justify-content: center; /* Vertikal zentrieren */
-  
-  /* Optional: Ein rechter Rand für die Optik */
   border-right: 1px solid #e0e0e0;
-  padding: 0; /* Altes Padding entfernen */
+  padding: 0;
 
 }
-
-
-
 
 /* Menü */
 
@@ -94,7 +100,6 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  /* Links untereinander anordnen */
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -108,7 +113,7 @@ width: 100%;
 }
 
 li a {
-display: block;
+  display: block;
   text-align: center;
   padding: 20px 10px; /* Etwas mehr Platz für die Links */
   text-decoration: none;
@@ -136,8 +141,51 @@ a:hover{
 
 
 section#one {
-padding-top: 40px;
-    padding-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+<<<<<<< HEAD
+}
+
+section#two {
+
+  background-color: rgba(138, 66, 71, 1);
+
+}
+
+section#two .section-geruest{
+
+  background-color: rgba(255, 255, 255, 0.3);
+
+}
+
+section#three{
+
+ background-color: #ebead275;
+
+}
+
+
+section#four{
+
+  background-color: #d6d206;
+
+}
+
+section#four .section-geruest{
+
+  background-color: rgba(255, 255, 255, 0.3);
+
+}
+
+.section-geruest{
+  
+    border: #ffffff solid;
+    border-radius: 20px;
+    min-width: 50%;
+    padding: 100px;
+
+=======
+>>>>>>> 02d15f9 (biz dra gwerchet)
 }
 
 
@@ -154,26 +202,20 @@ section {
   padding: 40px 5%; /* Etwas Padding an den Seiten */
   box-sizing: border-box;
 
-  /* Deine Animationen */
+  /*Animation*/
   transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.8s ease-in-out;
   opacity: 0.3;
-  /* height: 852px; ENTFERNEN! Wir nutzen min-height: 100vh */
 }
 
-
-section.from-right {
-    transform: translateX(100px);
-}
-
-/* 3. Der "Aktive" Zustand mittels :target */
-/* Das hier greift, wenn die ID der Section in der URL steht (z.B. seite.html#two) */
+/* Der "Aktive" Zustand mittels :target */
+/* Das hier greift, wenn die ID der Section in der URL steht (z.B. #two) */
 section:target {
     opacity: 1 !important; /* Voll sichtbar */
     transform: translateX(0) !important; /* Zurück in die Mitte */
 }
 
-/* Optional: Ein kleiner Trick, damit der Browser beim Klick 
-   nicht zu weit scrollt und die Überschrift verdeckt wird */
+/* Der Browser soll beim Klick 
+   nicht zu weit scrollen und damit die Überschrift nicht verdeckt wird */
 section:target::before {
     content: "";
     display: block;
@@ -183,14 +225,25 @@ section:target::before {
 
 #div-inhalt{
 
-  width: 80%;       /* Der Rest der Breite */
-  margin-left: 20%; /* WICHTIG: Platz für die Sidebar links lassen */
-  /* float: right entfernen, margin-left ist sauberer */
+  width: 80%;      
+  margin-left: 20%; 
   background-color: rgb(255, 255, 255);
   min-height: 300px;
 
 
 }
+
+
+/*Schriftart für Header*/
+#neon-heading {
+    text-shadow: 0 0 5px #D6D306, 0 0 10px #D6D306, 0 0 20px #D6D306; /*Does the glow*/
+    border-bottom: 2px solid #D6D306; /* Der untere Rand in Neon */
+        padding-bottom: 5px; /* Etwas Abstand zum Rand */
+    display: inline-block; /* Nur so viel Platz einnehmen wie der Text braucht */
+}
+
+
+/*Grössen für die Memes*/
 
 .memes img{
 
@@ -199,39 +252,73 @@ min-width: 100px;
 
 }
 
-#feedback-kommentar{
+<<<<<<< HEAD
+/*Video*/
+
+=======
+>>>>>>> 02d15f9 (biz dra gwerchet)
+video{
 
 width: 100%;
-  max-width: 600px; /* Optional: Maximale Breite auf Desktop */
+height: 100vh;
+
+
+}
+
+<<<<<<< HEAD
+=======
+
+>>>>>>> 02d15f9 (biz dra gwerchet)
+.background-video-container {
+    position: absolute;
+    opacity: 0.9;
+}
+
+<<<<<<< HEAD
+/*über meine Person*/
+
+.person-hobby{
+
+padding-top: 10px;
+padding-bottom: 10px;
+
+
+}
+
+
+.arbeit{
+
+  padding: 10px;
+
+}
+
+/*Feedback*/
+
+
+=======
+>>>>>>> 02d15f9 (biz dra gwerchet)
+#feedback-kommentar{
+
+  width: 100%;
+  max-width: 600px;
   margin: 0 auto;
   padding: 10px;
 }
 
-  textarea{
+textarea{
 
-/* 1. Responsivität */
   width: 100%; 
   box-sizing: border-box; 
-  
-  /* 2. Styling (Optional) */
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  
-  /* 3. Layout-Schutz */
-  resize: vertical; /* Verhindert horizontales Ziehen */
-  min-height: 100px; /* Mindesthöhe */
+  resize: vertical; 
+  min-height: 100px;
 
   }
 
 
 /* Footer Navigation */
-
-#footernav li{
-
-
-}
-
 
 #footernav  li:hover{
 
@@ -243,16 +330,6 @@ transition: transform 0.3s;
 -ms-transition: color 0.2s ease;
 
 }
-
-#footernav {
-
-
-}
-
-#footernav li a {
-
-}
-
 
 #div-footer{
 
@@ -269,20 +346,16 @@ transition: transform 0.3s;
 
 @media (max-width: 1064px) {
 
-    /* 1. HTML anpassen für fixierten Header */
     html {
-        /* WICHTIG: Damit Anker-Links nicht unter dem Header landen.
-           Der Wert muss der Höhe des mobilen Menüs entsprechen (ca. 260px hier) */
+        /* Anker-Links sollen nicht unter dem Header landen.Der Wert muss der Höhe des mobilen Menüs entsprechen (ca. 260px hier) */
         scroll-padding-top: 260px; 
     }
 
-    /* 2. Sidebar in Top-Header umwandeln */
     #div-head {
-        width: 100%;       /* Überschreibt 20% -> Volle Breite */
-        height: auto;      /* WICHTIG: Überschreibt 100vh -> Höhe passt sich Inhalt an */
+        width: 100%;       
+        height: auto; 
         border-right: none;
-        border-bottom: 1px solid #e0e0e0; /* Rand unten statt rechts */
-        
+        border-bottom: 1px solid #e0e0e0; 
         /* Zentrierung der Sidebar aufheben */
         display: block;    
         padding: 10px 0;
@@ -293,25 +366,18 @@ transition: transform 0.3s;
         padding: 15px; /* Weniger Padding als auf Desktop */
     }
 
-    /* 3. Inhaltsbereich anpassen */
     #div-inhalt {
-        width: 100%;     /* Volle Breite */
-        margin-left: 0;  /* WICHTIG: Linken Abstand entfernen */
-        
-        /* WICHTIG: Oberen Abstand hinzufügen, damit der erste Inhalt 
-           beim Laden nicht unter dem fixierten Header klebt. 
-           Muss dem scroll-padding-top entsprechen. */
+        width: 100%;    
+        margin-left: 0;  
         margin-top: 260px; 
     }
 
-    /* 4. Sections anpassen für kleine Screens */
+    
     section {
-        /* Auf mobilen Geräten NICHT vertikal zentrieren.
-           Inhalt soll natürlich von oben nach unten fließen. */
+        /* Auf mobilen Geräten NICHT vertikal zentrieren. Inhalt soll natürlich von oben nach unten fließen. */
         justify-content: flex-start; 
         padding-top: 20px;
-        /* Auf mobilen Geräten ist 100vh oft problematisch wegen der Adressleiste,
-           aber wir lassen es erstmal drin. Falls es stört, hier auf 'auto' ändern. */
+      
     }
 }
 
@@ -319,26 +385,21 @@ transition: transform 0.3s;
 
 #feedback-kommentar{
 
-width: 100%;
-  max-width: 600px; /* Optional: Maximale Breite auf Desktop */
+  width: 100%;
+  max-width: 600px; 
   margin: 0 auto;
   padding: 10px;
 }
 
   textarea{
 
-/* 1. Responsivität */
   width: 100%; 
   box-sizing: border-box; 
-  
-  /* 2. Styling (Optional) */
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  
-  /* 3. Layout-Schutz */
   resize: vertical; /* Verhindert horizontales Ziehen */
-  min-height: 100px; /* Mindesthöhe */
+  min-height: 100px;
 
 
   }

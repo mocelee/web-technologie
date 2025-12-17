@@ -5,21 +5,33 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/impressum.css">
 </head>
 <body>
     <div id="div-head" class="div-build">
-        <header>Über mich</header>
+        
             <nav id="hauptnav" class="nav">
             <ul>
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#one" class="fugaz-one-regular">Back to the roots</a></li>
             </ul>
             </nav>
     </div>
     <div id="div-inhalt" class="div-build">
-        <section>
+        <div class="background-video-container">
+            <video autoplay loop muted playsinline>
+                <source src="../vid/footer-vid.mp4" type="video/mp4">
+                Dein Browser unterstützt das Video-Tag nicht.
+            </video>
+        </div>
+        <section id="angaben">
             <article>
-                <h2>Angaben gemäß § 5 TMG</h2>
+                <h2 class="oi-regular">Schicken sie eine Brieftaube an:</h2>
                     <p>
                     Michael Mosberger<br />
                     Schwellbrunnerstrasse 79d <br />
@@ -27,8 +39,8 @@
                     Schweiz <br />
                     </p>
                 <h2>Kontakt</h2>
-                    <p>Telefon: +49 (0)123 4567890 <br />
-                    E-Mail: kontakt@michaelmosberger.de</p>
+                    <p>Telefon: 00 <br />
+                    E-Mail: kontakt@witz.de</p>
                 </article>
         </section>
     </div>
@@ -36,7 +48,7 @@
         <div id="div-footer" class="div-build">
         <footer id="footer" .class="footer">
            <ul id="footernav" class="nav">
-                <li><a href="impressum.html">Impressum</a></li>
+                <li><a href="impressum.html" class="fugaz-one-regular">Impressum</a></li>
             </ul>
         </footer>
     </div>

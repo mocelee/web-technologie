@@ -1,3 +1,15 @@
-body{
+section{
 opacity: 1;
+}
+
+#angaben{
+
+    background-color: rgb(255, 255, 255);
+
+
+}
+
+video{
+
+    opacity: 0.3;
 }
