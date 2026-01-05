@@ -139,15 +139,21 @@ a:hover{
 
 /* Div Section  */
 
+#welcomegif{
+
+  width: 1219px;
+
+}
 
 section#one {
   padding-top: 40px;
   padding-bottom: 40px;
+  min-height: 815px;
 }
 
 section#two {
 
-  background-color: rgba(138, 66, 71, 1);
+  background-color: #d6d206;
 
 }
 
@@ -159,7 +165,7 @@ section#two .section-geruest{
 
 section#three{
 
- background-color: #ebead275;
+ background-color: white;
 
 }
 
@@ -273,7 +279,6 @@ padding-bottom: 10px;
 
 
 }
-
 
 .arbeit{
 

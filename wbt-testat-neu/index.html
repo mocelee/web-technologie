@@ -26,21 +26,17 @@
 
     </div>
     <div id="div-inhalt" >
-        <div class="background-video-container">
-            <video autoplay loop muted playsinline>
-                <source src="vid/bg-vid.mp4" type="video/mp4">
-                Dein Browser unterstützt das Video-Tag nicht.
-            </video>
-        </div>
+        <div class="background-video-container"><img id="welcomegif" src="img/matterhorn.gif" /></div>
         <section id="one" class="from-left">
-            <article><h1 class="oi-regular" id="neon-heading">Testat von Michael Mosberger</h1></article>
+            <article><h1 class="oi-regular" id="neon-heading">Guete Morge. Das isch mis Testat</h1></article>
         </section>
          <section id="two">
-            <h1 class="oi-regular">Über meine Person</h1>
             <div id="person" class="section-geruest">
+                            <h1 class="oi-regular">Wer bin ich?</h1>
+
                 <div id="person-grundgeruest">
                     <div id="person-head">
-                        <div class="bild-data"><img src="img/mmo.jpg" class="from-right" width="140px"/></div>
+                        <!-- <div class="bild-data"><img src="img/mmo.jpg" class="from-right" width="140px"/></div> -->
                         <div class="name-data"><h2 class="oi-regular">Michael Mosberger</h2></div>
                     </div>
                     <div id="person-body">
@@ -51,9 +47,9 @@
                         <div id="person-arbeit">
                             <div class="arbeit-titel" id="arbeit0"><p class="fugaz-one-regular">Firma, Tätigkeit, Start- & Endzeit</p></div>
                             <div class="arbeit" id="arbeit01">alpstein IT GmbH, Ausbildung Informatiker Systemtechnik, 2013 bis 2017</div>  
-                            <div class="arbeit" id="arbeit02">Grüner Wald- und Wiesenverein, Irgendwas mit Idioten, 2017 bis 2018</div>    
+                            <div class="arbeit" id="arbeit02">Grüner Wald- und Wiesenverein, Irgendwas mit Evolutionsbremsen, 2017 bis 2018</div>    
                             <div class="arbeit" id="arbeit03">stadler IT GmbH, Praktikum System Engineer, 2018 bis 2019</div>   
-                            <div class="arbeit" id="arbeit04">clavis IT ag, System Engineer, 2019 bis heute</div>   
+                            <div class="arbeit" id="arbeit04">clavis IT ag, System Engineer + Service Desk, 2019 bis heute</div> 
                         </div>
                     </div>
             </div>
@@ -61,7 +57,14 @@
         </section>
         <section id="three">
             <div class="section-geruest">
-                <div class="div" id="news_header"><h1 class="oi-regular">Newsblog</h1></div>
+                <div class="div" id="news_header"><h1 class="oi-regular">Wotsch lache?</h1></div>
+                     <div class="memes" id="news_article04">
+                        <hr />
+                        <div><h2>Meme of the Day #4</h2></div>
+                        <article>
+                            <img src="img/meme03.jpg" />
+                        </article><hr />
+                    </div> 
                     <div class="memes" id="news_article03">
                         <hr />
                         <div><h2>Meme of the Day #3</h2></div>
@@ -85,20 +88,20 @@
         </section>
         <section id="four">
             <div id="contact" class="section-geruest">
-                <h1 class="oi-regular">Feedback</h1>
+                <h1 class="oi-regular">Gib mer Feedback</h1>
                 <form action="mailto:michimosberger@gmail.com" method="post" enctype="text/plain">
-                    <label>Vorname:
-                        <input type="text" wrap="virtual" name="vorname" placeholder="Vorname eingeben" required> 
-                    </label><br>
-                    <label>Nachname:
-                        <input type="text" name="nachname" placeholder="Nachname eingeben" required> 
-                    </label><br>
-                    <label>E-Mail:
-                        <input type="email" name="E-Mail"placeholder="E-Mail-Adresse eingeben" required>
-                    </label><br>
-                    <label> Kommentare: <br>
-                        <textarea id="feedback-kommentar" name="feedback-kommentar" rows="10" cols="50" wrap="virtual" placeholder="Bitte geben Sie Ihren Kommentar hier ab."></textarea><br>
-                    </label>
+                    <label for="vorname">Vorname:</label>
+                    <input type="text" wrap="virtual" id="vorname" name="vorname" placeholder="Vorname eingeben" required> 
+                    <br>
+                    <label for="nachname">Nachname:</label>
+                    <input type="text" id="nachname" name="nachname" placeholder="Nachname eingeben" required> 
+                    <br>
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="E-Mail"placeholder="E-Mail-Adresse eingeben" required>
+                    <br>
+                    <label for="feedback-kommentar"> Kommentare:</label> <br>
+                    <textarea id="feedback-kommentar" name="feedback-kommentar" rows="10" cols="50" wrap="virtual" placeholder="Bitte geben Sie Ihren Kommentar hier ab."></textarea><br>
+                    <br>
                     <input type="submit" value="Speichern"> <br>
                     <input type="reset" value="Reset">  <br>
                 </form>
