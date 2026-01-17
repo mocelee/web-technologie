@@ -320,20 +320,70 @@ margin-top: -150px;
 
 
 }
+.person-button-input {
+    display: none;
+}
 
-.person-hobby{
+#person-hobbies {
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
 
-padding-top: 10px;
-padding-bottom: 10px;
+#person-arbeit {
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
 
+
+#hobby-checkbox:checked ~ #person-hobbies {
+    display: block;
+}
+
+#arbeit-checkbox:checked ~ #person-arbeit {
+    display: block;
+}
+
+
+.plus{
+
+width: 25px;
+height: 25px;
 
 }
 
-.arbeit{
-
-  padding: 10px;
-
+.fake-button {
+    display: inline-block;
+    background-color: #D6D306;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: sans-serif;
+    user-select: none;
+    transition: background-color 0.3s;
 }
+
+.fake-button:hover {
+    background-color: #ffffff;
+    color:black;
+}
+
+#hobby-checkbox:checked ~ .person-buttons .fake-button {
+
+        background-color: #ffffff;
+    color:black;
+}
+
+#hobby-checkbox:checked ~ .person-buttons .fake-button {
+    background-color: #4CAF50;
+}
+
 
 /*Feedback*/
 
@@ -357,6 +407,38 @@ textarea{
   min-height: 100px;
 
   }
+
+  /* Grundstyling für das Input-Feld */
+.input {
+  width: 100%;
+  padding: 12px 15px;       
+  margin: 8px 0;            
+  box-sizing: border-box;   /* Padding vergrößert das Element nicht */
+  border: 2px solid #ccc;  
+  border-radius: 8px;     
+  font-size: 16px;          
+  transition: all 0.3s ease; /* Weicher Übergang bei Änderungen */
+  outline: none;            
+}
+
+
+.input:focus {
+  border-color: #afa04c;   
+  box-shadow: 0 0 8px rgba(175, 157, 76, 0.3); /* Leichter grüner Schein */
+}
+
+.button{
+
+  background-color: white;
+  box-sizing: border-box; 
+  border: 2px solid #ccc; 
+  width: 100%;
+  padding: 12px 15px;       
+  margin: 8px 0;   
+
+}
+
+
 
 
 /* Footer Navigation */
