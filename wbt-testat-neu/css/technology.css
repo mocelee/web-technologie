@@ -1,0 +1,26 @@
+#technology h1{
+
+  text-shadow: 0 0 5px #D6D306, 0 0 10px #D6D306, 0 0 20px #D6D306; 
+}
+
+/* Von Sektion 5*/ 
+
+.icons{
+width: 50%;
+display: flex;
+gap:150px;
+  margin-top: 50px;
+
+  padding-top:50px;
+}
+
+
+
+#icon-html {
+    flex: 1;
+
+}
+#icon-css{
+
+  flex: 1;
+}

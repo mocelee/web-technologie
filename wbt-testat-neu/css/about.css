@@ -1,0 +1,231 @@
+/*über meine Person*/
+
+
+.bild-data{
+
+float:right;
+
+}
+
+.bild-data img{
+
+border-color:#d6d206;
+border-radius: 50%;
+border-width:5px;
+margin-top: -150px;
+
+
+}
+
+.person-buttons{
+
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+.person-buttons .augean {
+    display: block;
+}
+
+.person-buttons .augeaus {
+    display: none;
+}
+
+.person-buttons svg{
+
+width: 50px;
+
+}
+
+.person-button-input {
+    display: none;
+}
+
+#person-hobbies {
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: white;
+    transform: scale(1);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+
+/* Hobby */
+
+#hobby-checkbox:checked ~ #person-hobbies {
+    display: block;
+}
+
+
+#hobby-checkbox:checked ~ .person-buttons + .fake-button {
+
+    background-color: #ffffff;
+    color:black;
+}
+
+#hobby-checkbox:checked ~ .person-buttons + .fake-button {
+    background-color: #c14d0a;
+}
+
+#hobby-checkbox + .person-buttons .augean{
+
+    display:block;
+}
+
+#hobby-checkbox + .person-buttons .augeaus{
+
+    display:none;
+}
+
+#hobby-checkbox:checked + .person-buttons .augeaus{
+    display: block;
+}
+
+#hobby-checkbox:checked + .person-buttons .augean{
+    
+    display: none;
+}
+
+
+/* --------------------------------------- */
+
+
+/* Arbeit */
+
+#person-arbeit {
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: white;
+    transform: scale(1);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+
+#arbeit-checkbox:checked ~ #person-arbeit {
+    display: block;
+}
+
+#arbeit-checkbox + .person-buttons .augean{
+
+    display:block;
+}
+
+#arbeit-checkbox + .person-buttons .augeaus{
+
+    display:none;
+}
+
+#arbeit-checkbox:checked + .person-buttons .augeaus{
+    display: block;
+}
+
+#arbeit-checkbox:checked + .person-buttons .augean{
+    
+    display: none;
+}
+
+/* --------------------------------------- */
+
+
+/* IT Hobby */
+
+#person-it {
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: white;
+    transform: scale(1);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#it-checkbox:checked ~ #person-it {
+    display: block;
+}
+
+#it-checkbox:checked ~ #person-it {
+    display: block;
+}
+
+#it-checkbox + .person-buttons .augean{
+
+    display:block;
+}
+
+#it-checkbox + .person-buttons .augeaus{
+
+    display:none;
+}
+
+#it-checkbox:checked + .person-buttons .augeaus{
+    display: block;
+}
+
+#it-checkbox:checked + .person-buttons .augean{
+    
+    display: none;
+}
+
+
+/* --------------------------------------- */
+
+
+/* Fencing Hobby */
+
+#person-fencing-hobby {
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: white;
+    transform: scale(1);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#fencing-checkbox ~ .person-buttons ~ .augean{
+
+    display:block;
+}
+
+#fencing-checkbox + .person-buttons .augeaus{
+
+    display:none;
+}
+
+#fencing-checkbox:checked + .person-buttons .augeaus{
+    display: block;
+}
+
+#fencing-checkbox:checked + .person-buttons .augean{
+    
+    display: none;
+}
+
+#fencing-checkbox:checked ~ #person-fencing-hobby {
+    display: block;
+}
+
+/* --------------------------------------- */
+
+
+.fake-button {
+    display: inline-block;
+    background-color: #D6D306;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: sans-serif;
+    user-select: none;
+    transition: background-color 0.3s;
+}
+
+.fake-button:hover {
+    background-color: #ffffff;
+    color:black;
+}

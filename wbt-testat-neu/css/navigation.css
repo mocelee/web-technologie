@@ -1,0 +1,36 @@
+/* #hauptnav Menü */
+
+#hauptnav ul li:hover{
+
+height:50px;
+transform: scale(1.3);
+transition: transform 0.3s; 
+
+}
+
+
+#hauptnav ul {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+#hauptnav li {
+
+width: 100%;
+
+}
+
+#hauptnav li a {
+  display: block;
+  text-align: center;
+  padding: 20px 10px; /* Etwas mehr Platz für die Links */
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: all 0.3s ease;
+}

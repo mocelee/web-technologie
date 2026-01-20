@@ -5,12 +5,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
         <link rel="icon" type="image/x-icon" href="img/favicon.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div id="div-head" class="div-build">
@@ -22,54 +22,129 @@
                     <li><a href="#three" class="fugaz-one-regular">News</a></li> 
                     <li><a href="#four" class="fugaz-one-regular">Feedback</a></li>
                     <li><a href="#five" class="fugaz-one-regular">Eingesetzte Technologien</a></li>
+                    <li><a href="html/impressum.html" class="fugaz-one-regular">Impressum</a></li>
+
                 </ul>
             </nav>
 
     </div>
     <div id="div-inhalt" >
-        <div class="background-video-container"><img id="welcomegif" src="img/matterhorn.gif" /></div>
         <section id="one">
-            <article><h1 class="oi-regular" id="neon-heading">Guete Morge. Das isch mis Testat</h1></article>
+            <div class="welcomegif"> </div>
+            <article id="title-header"><h1 class="oi-regular" id="neon-heading">Guete Morge. Das isch mis Testat</h1></article>
         </section>
          <section id="two">
             <div id="person" class="section-geruest">
-                            <h1 class="oi-regular">Wer bin ich?</h1>
-
+                <h1 class="oi-regular">Wer bin ich?</h1>
                 <div id="person-grundgeruest">
                     <div id="person-head">
                         <div class="name-data"><h2 class="oi-regular">Michael Mosberger</h2></div>
-                        <div class="bild-data"><img src="img/mmo.jpg" class="from-right" width="140px"/></div>
+                        <div class="bild-data"><img src="img/mmo.jpg" id="enrichtigemichi" width="140px"/></div>
                     </div>
                     <div id="person-body">
+
+                        <input type="checkbox" id="fencing-checkbox" class="person-button-input"/>
+
+                        <div class="person-buttons">
+                        <label for="fencing-checkbox" class="fake-button">
+                            Fechten
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 augean">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 augeaus">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 0 0 1.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.451 10.451 0 0 1 12 4.5c4.756 0 8.773 3.162 10.065 7.498a10.522 10.522 0 0 1-4.293 5.774M6.228 6.228 3 3m3.228 3.228 3.65 3.65m7.894 7.894L21 21m-3.228-3.228-3.65-3.65m0 0a3 3 0 1 0-4.243-4.243m4.242 4.242L9.88 9.88" />
+                            </svg>
+                        </label>
+                        </div>
+                        <div id="person-fencing-hobby">
+                            <article class="person-fencing">
+                            </article>
+                            <article class="person-fencing">
+                                <img src="img/fechten.jpg style="width:100px" />
+                                Fechten verfolgt mich schon fast mein ganzes Leben. Seit dem 7 Lebensjahr besitze ich eine Fecht-Lizenz.
+                            </article>
+                        </div>
+
                         <input type="checkbox" id="hobby-checkbox" class="person-button-input"/>
 
                         <div class="person-buttons">
-                            <label>Hobbies und Interessen</label>
-                            <label for="hobby-checkbox" class="fake-button"><img src="img/plus--v2.png" class="plus" /></label>
+                            <label for="hobby-checkbox" class="fake-button">Andere Hobbies und Interessen
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 augean">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 augeaus">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 0 0 1.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.451 10.451 0 0 1 12 4.5c4.756 0 8.773 3.162 10.065 7.498a10.522 10.522 0 0 1-4.293 5.774M6.228 6.228 3 3m3.228 3.228 3.65 3.65m7.894 7.894L21 21m-3.228-3.228-3.65-3.65m0 0a3 3 0 1 0-4.243-4.243m4.242 4.242L9.88 9.88" />
+                            </svg>
+
+                            </label>
                         </div>
 
                         <div id="person-hobbies">
-                            <article class="person-hobby">
-                                Ich unternehme sehr gern Sport in meiner Freizeit. Ich fechte seit 21 Jahren regelmässig und spiele ab und zu mit Freunden an Unihockey-Grümpeli.
-                            </article>
-                            <article class="person-hobby">
+                            <article class="person-article">
                                 Sowohl im Sommer als auch im Winter zieht es mich raus in die Natur. <br>
                                 Ob Wanderungen auf Berge oder Bachwanderungen, Schlafen im oder ausserhalb vom Zelt/ Hängematte/ ISO-Matte direkt auf dem Boden, alles dabei.
                             </article>
                         </div>
 
-                        <input type="checkbox" id="arbeit-checkbox" class="person-button-input"/>
+                        <input type="checkbox" id="it-checkbox" class="person-button-input"/>
 
                         <div class="person-buttons">
-                            <label>Berufliche Laufbahn:</label>
-                            <label for="arbeit-checkbox" class="fake-button"><img src="img/plus--v2.png" class="plus" /></label>
+                            <label for="it-checkbox" class="fake-button">Interessen in IT
+                                
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 augean">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 augeaus">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 0 0 1.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.451 10.451 0 0 1 12 4.5c4.756 0 8.773 3.162 10.065 7.498a10.522 10.522 0 0 1-4.293 5.774M6.228 6.228 3 3m3.228 3.228 3.65 3.65m7.894 7.894L21 21m-3.228-3.228-3.65-3.65m0 0a3 3 0 1 0-4.243-4.243m4.242 4.242L9.88 9.88" />
+                            </svg>
+
+                            </label>
                         </div>
+
+                        <div id="person-it">
+                            <article class="person-article">
+                                In der Informatik interessieren mich folgende Bereiche sehr:
+                                <ul>
+                                    <li>Virtualisierung (XenCenter, HyperV, Proxmox)</li>
+                                    <li>Serverumgebungen (Docker, K8s)</li>
+                                    <li>Linux/ Unix (RHEL, Debian)</li>
+                                    <li>Automatisierungen (Ansible, n8n)</li>
+                                    <li>IoT/ SmartHome (HomeAssistant, Google Home, Phillips Hue)</li>
+                                </ul>
+                            </article>
+                        </div>
+
+
+                        <input type="checkbox" id="arbeit-checkbox" class="person-button-input"/>
+                            <div class="person-buttons">
+                                <label for="arbeit-checkbox" class="fake-button">Berufliche Laufbahn
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 augean">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 augeaus">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 0 0 1.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.451 10.451 0 0 1 12 4.5c4.756 0 8.773 3.162 10.065 7.498a10.522 10.522 0 0 1-4.293 5.774M6.228 6.228 3 3m3.228 3.228 3.65 3.65m7.894 7.894L21 21m-3.228-3.228-3.65-3.65m0 0a3 3 0 1 0-4.243-4.243m4.242 4.242L9.88 9.88" />
+                                </svg>
+
+                                </label>
+                            </div>
                         <div id="person-arbeit">
-                            <div class="arbeit-titel" id="arbeit0"><p class="fugaz-one-regular">Firma, Tätigkeit, Start- & Endzeit</p></div>
-                            <div class="arbeit" id="arbeit01">alpstein IT GmbH, Ausbildung Informatiker Systemtechnik, 2013 bis 2017</div>  
-                            <div class="arbeit" id="arbeit02">Grüner Wald- und Wiesenverein, Irgendwas mit Evolutionsbremsen, 2017 bis 2018</div>    
-                            <div class="arbeit" id="arbeit03">stadler IT GmbH, Praktikum System Engineer, 2018 bis 2019</div>   
-                            <div class="arbeit" id="arbeit04">clavis IT ag, System Engineer + Service Desk, 2019 bis heute</div> 
+                            <article class="person-article">
+                                <div class="arbeit-titel" id="arbeit0"><p class="fugaz-one-regular">Firma, Tätigkeit, Start- & Endzeit</p></div>
+                                <div class="arbeit" id="arbeit01">alpstein IT GmbH, Ausbildung Informatiker Systemtechnik, 2013 bis 2017</div>  
+                                <div class="arbeit" id="arbeit02">Grüner Wald- und Wiesenverein, Irgendwas mit Evolutionsbremsen, 2017 bis 2018</div>    
+                                <div class="arbeit" id="arbeit03">stadler IT GmbH, Praktikum System Engineer, 2018 bis 2019</div>   
+                                <div class="arbeit" id="arbeit04">clavis IT ag, System Engineer + Service Desk, 2019 bis heute</div> 
+                            </article>
                         </div>
                     </div>
             </div>
@@ -78,46 +153,49 @@
         <section id="three">
             <div class="section-geruest">
                 <div class="div" id="news_header"><h1 class="oi-regular">Chasch mol lache?</h1></div>
+                                <div class="memes" id="news_article06">
+                        <article>
+                            <form action="html/news/news-06.html">
+                                <input type="submit" value="Meme of the Day #6" class="button"/>
+                            </form>
+                        </article>
+                        <hr />
+                    </div>   
                 <div class="memes" id="news_article05">
-                        <div><h2>Meme of the Day #5</h2></div>
                         <article>
                             <form action="html/news/news-05.html">
-                                <input type="submit" value="Press me" class="button"/>
+                                <input type="submit" value="Meme of the Day #5" class="button"/>
                             </form>
                         </article>
                         <hr />
                     </div>      
                 <div class="memes" id="news_article04">
-                        <div><h2>Meme of the Day #4</h2></div>
                         <article>
                             <form action="html/news/news-04.html">
-                                <input type="submit" value="erinnerung diesen button zu namen" class="button"/>
+                                <input type="submit" value="Meme of the Day #4" class="button"/>
                             </form>
                         </article>
                         <hr />
                     </div> 
-                    <div class="memes" id="news_article03">                      
-                        <div><h2>Meme of the Day #3</h2></div>
+                    <div class="memes" id="news_article03">
                         <article>
                             <form action="html/news/news-03.html">
-                                <input type="submit" value="Klicken Sie hier" class="button" />
+                                <input type="submit" value="Meme of the Day #3" class="button" />
                             </form>
                         </article>
                         <hr />
                     </div>    
                     <div class="memes" id="news_article02">
-                        <div><h2>Meme of the Day #2</h2></div>
                         <article>
                             <form action="html/news/news-02.html">
-                                <input type="submit" value="Drücken" class="button"/>
+                                <input type="submit" value="Meme of the Day #2" class="button"/>
                             </form>
                         </article><hr />
                     </div>
                     <div class="memes" id="news_article01">
-                        <div><h2>Meme of the Day #1</h2></a></div>
                         <article>
                             <form action="html/news/news-01.html">
-                                <input type="submit" value="Klicken Sie hier" class="button" />
+                                <input type="submit" value="Meme of the Day #1" class="button" />
                             </form>
                         </article><hr />
                 </div>
@@ -158,7 +236,6 @@
         <div id="div-footer" class="div-build">
         <footer id="footer" .class="footer">
            <ul id="footernav" class="nav">
-                <li><a href="html/impressum.html" class="fugaz-one-regular">Impressum</a></li>
             </ul>
         </footer>
         </div>

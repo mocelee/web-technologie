@@ -1,3 +1,20 @@
+/*==============================*/
+/* Import von anderen CSS-Files */
+/*==============================*/
+
+@import url("navigation.css");  /* CSS für Navigation */
+@import url("impressum.css");   /* CSS für Impressum */
+@import url("news.css");        /* CSS für News */
+@import url("about.css");       /* CSS für About */
+@import url("feedback.css");    /* CSS für Feedback */
+@import url("footer.css");      /* CSS für About */
+@import url("technology.css");      /* CSS für About */
+@import url("responsive.css");  /* CSS für Responsive */
+
+/*============================*/
+/* Universalselektor          */
+/*============================*/
+
 *{
 
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -5,15 +22,19 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 
 }
 
-
-
-/* Standard-Elemente*/
+/*============================*/
+/* Standard-Elemente          */
+/*============================*/
 
 html{
 
   background-color: #ffffff;
   scroll-behavior: smooth;
   height: 100%;
+  /* 'y' bedeutet vertikales Scrollen */
+    /* 'mandatory' zwingt den Browser, immer am nächsten Punkt einzurasten. 
+       Man kann nicht "dazwischen" stehen bleiben. */
+  scroll-snap-type: y mandatory;
 
 }
 
@@ -40,7 +61,33 @@ header{
   text-align: center;
 }
 
-/*Schrift */
+/* Links */
+
+a:link, a:visited{
+
+  color:rgb(0, 0, 0);
+
+}
+
+a:hover{
+
+  color: rgb(214, 211, 6);
+
+}
+
+/* Horizontale Linie */
+
+hr{
+
+color: white;
+width:100%;
+border:0.5px, solid;
+
+}
+
+/*============================*/
+/* Schriften                  */
+/*============================*/
 
 .oi-regular {
   font-family: "Oi", serif;
@@ -54,15 +101,25 @@ header{
   font-style: normal;
 }
 
-/* Horizontal Line */
+/*Schriftart für Header*/
 
-hr{
+#neon-heading {
+    text-shadow: 0 0 5px #D6D306, 0 0 10px #D6D306, 0 0 20px #D6D306; /*Does the glow*/
+    border-bottom: 2px solid #D6D306; /* Der untere Rand in Neon */
+    padding-bottom: 5px; /* Etwas Abstand zum Rand */
+    display: inline-block; /* Nur so viel Platz einnehmen wie der Text braucht */
+}
 
-color: white;
-width:100%;
-border:0.5px, solid;
+#title-header{
+
+position:flex;
 
 }
+
+/*============================*/
+/* DIV Elemente               */
+/*============================*/
+
 
 /* Div Header */
 
@@ -84,77 +141,31 @@ border:0.5px, solid;
 
 }
 
-/* Menü */
+#div-inhalt{
 
-ul li:hover{
+  width: 80%;      
+  margin-left: 20%; 
+  background-color: rgb(255, 255, 255);
+  min-height: 300px;
 
-height:50px;
-transform: scale(1.3);
-transition: transform 0.3s; 
 
 }
 
-
-ul {
-
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-
-}
-
-li {
-
-width: 100%;
-
-}
-
-li a {
-  display: block;
-  text-align: center;
-  padding: 20px 10px; /* Etwas mehr Platz für die Links */
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  transition: all 0.3s ease;
-}
-
-/* Links */
-
-a:link, a:visited{
-
-  color:rgb(0, 0, 0);
-
-}
-
-a:hover{
-
-  color: rgb(214, 211, 6);
-
-}
-
-
-
-/* Div Section  */
-
-#welcomegif{
-
-  width: 127%;
-
-}
+/*============================*/
+/* Sektionen                  */
+/*============================*/
 
 section#one {
   padding-top: 40px;
   padding-bottom: 40px;
-  /*min-height: 815px;*/
+  background-image: url(../img/matterhorn.gif);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 section#two {
 
   background-color: #d6d206;
-  margin-top: 23px;
 
 }
 
@@ -204,7 +215,9 @@ section#five .section-geruest{
 
 }
 
+
 /*Spezielle Sections */
+
 section#memesektion{
 
 opacity:1;
@@ -236,7 +249,9 @@ section {
 
   /*Animation*/
   transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.8s ease-in-out;
-  opacity: 0.3;
+
+  scroll-snap-align: start;
+
 }
 
 /* Der "Aktive" Zustand mittels :target */
@@ -257,25 +272,16 @@ section:target::before {
     margin-top: -60px;
 }
 
-#div-inhalt{
 
-  width: 80%;      
-  margin-left: 20%; 
-  background-color: rgb(255, 255, 255);
-  min-height: 300px;
+/*============================*/
+/* Bilder, GIFs, Videos       */
+/*============================*/
 
+#welcomegif{
+
+  width: 127%;
 
 }
-
-
-/*Schriftart für Header*/
-#neon-heading {
-    text-shadow: 0 0 5px #D6D306, 0 0 10px #D6D306, 0 0 20px #D6D306; /*Does the glow*/
-    border-bottom: 2px solid #D6D306; /* Der untere Rand in Neon */
-        padding-bottom: 5px; /* Etwas Abstand zum Rand */
-    display: inline-block; /* Nur so viel Platz einnehmen wie der Text braucht */
-}
-
 
 /*Grössen für die Memes*/
 
@@ -286,68 +292,24 @@ min-width: 100px;
 
 }
 
-/*Video*/
+#enrichtigemichi:hover{
 
-video{
-
-width: 100%;
-height: 100vh;
-
+transform: rotate(20deg) scale(2);
+transition: transform 0.3s;
+border-radius: 0px;
 
 }
 
+/* GIF */
 .background-video-container {
     position: absolute;
-    opacity: 0.9;
-}
-
-/*über meine Person*/
-
-
-.bild-data{
-
-float:right;
-
-}
-
-.bild-data img{
-
-border-color:#d6d206;
-border-radius: 50%;
-border-width:5px;
-margin-top: -150px;
-
-
-}
-.person-button-input {
-    display: none;
-}
-
-#person-hobbies {
-    display: none;
-    margin-top: 15px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-}
-
-#person-arbeit {
-    display: none;
-    margin-top: 15px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
 }
 
 
-#hobby-checkbox:checked ~ #person-hobbies {
-    display: block;
-}
 
-#arbeit-checkbox:checked ~ #person-arbeit {
-    display: block;
-}
-
+/*============================*/
+/* Buttons, Checkboxen, Icons */
+/*============================*/
 
 .plus{
 
@@ -355,135 +317,6 @@ width: 25px;
 height: 25px;
 
 }
-
-.fake-button {
-    display: inline-block;
-    background-color: #D6D306;
-    color: black;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: sans-serif;
-    user-select: none;
-    transition: background-color 0.3s;
-}
-
-.fake-button:hover {
-    background-color: #ffffff;
-    color:black;
-}
-
-#hobby-checkbox:checked ~ .person-buttons .fake-button {
-
-        background-color: #ffffff;
-    color:black;
-}
-
-#hobby-checkbox:checked ~ .person-buttons .fake-button {
-    background-color: #4CAF50;
-}
-
-
-/*Feedback*/
-
-
-#feedback-kommentar{
-
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 10px;
-}
-
-textarea{
-
-  width: 100%; 
-  box-sizing: border-box; 
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical; 
-  min-height: 100px;
-
-  }
-
-  /* Grundstyling für das Input-Feld */
-.input {
-  width: 100%;
-  padding: 12px 15px;       
-  margin: 8px 0;            
-  box-sizing: border-box;   /* Padding vergrößert das Element nicht */
-  border: 2px solid #ccc;  
-  border-radius: 8px;     
-  font-size: 16px;          
-  transition: all 0.3s ease; /* Weicher Übergang bei Änderungen */
-  outline: none;            
-}
-
-
-.input:focus {
-  border-color: #afa04c;   
-  box-shadow: 0 0 8px rgba(175, 157, 76, 0.3); /* Leichter grüner Schein */
-}
-
-.button{
-
-  background-color: white;
-  box-sizing: border-box; 
-  border: 2px solid #ccc; 
-  width: 100%;
-  padding: 12px 15px;       
-  margin: 8px 0;   
-
-}
-
-
-
-
-/* Footer Navigation */
-
-#footernav  li:hover{
-
-height:50px;
-transform: scale(1.5);
-transition: transform 0.3s;
--moz-transition: color 0.2s ease;
--webkit-transition: color 0.2s ease;
--ms-transition: color 0.2s ease;
-
-}
-
-#div-footer{
-
-  width: 100%;
-  margin-left:0%;
-  list-style-type: none;
-  background-color: white;
-
-}
-
-/* Von Sektion 5*/ 
-
-.icons{
-width: 50%;
-display: flex;
-gap:150px;
-  margin-top: 50px;
-
-  padding-top:50px;
-}
-
-
-
-#icon-html {
-    flex: 1;
-
-}
-#icon-css{
-
-  flex: 1;
-}
-
 
 .icons > img {
     padding: 10px 100px 10px 10px;
@@ -502,8 +335,6 @@ gap:150px;
     padding: 25px;
 }
 
-
-
 .icons a img:hover{
 
 transform: scale(1.5);
@@ -513,10 +344,6 @@ border-color:  #d6d206;
     padding: 50px;
 }
 
-#technology h1{
-
-  text-shadow: 0 0 5px #D6D306, 0 0 10px #D6D306, 0 0 20px #D6D306; 
-}
 
 /*Text markieren*/
 
@@ -543,6 +370,7 @@ border-color:  #d6d206;
   background-color: white;
   color: #000000;
 }
+
 
 /*Responsive*/
 

@@ -1,0 +1,21 @@
+/* Footer Navigation */
+
+#footernav  li:hover{
+
+height:50px;
+transform: scale(1.5);
+transition: transform 0.3s;
+-moz-transition: color 0.2s ease;
+-webkit-transition: color 0.2s ease;
+-ms-transition: color 0.2s ease;
+
+}
+
+#div-footer{
+
+  width: 100%;
+  margin-left:0%;
+  list-style-type: none;
+  background-color: white;
+
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<style>
+  /* 1. Der Container (in diesem Fall das ganze HTML) 
+     definiert das Scroll-Verhalten.
+  */
+  html {
+    /* 'y' bedeutet vertikales Scrollen */
+    /* 'mandatory' zwingt den Browser, immer am nächsten Punkt einzurasten. 
+       Man kann nicht "dazwischen" stehen bleiben. */
+    scroll-snap-type: y mandatory;
+    
+    /* Optional: Macht das Scrollen weicher */
+    scroll-behavior: smooth; 
+    
+    margin: 0;
+  }
+
+  body {
+    margin: 0; /* Entfernt Standard-Ränder */
+  }
+
+  /* 2. Die einzelnen Abschnitte (Divs)
+  */
+  .full-screen-section {
+    /* 'start' bedeutet: Der obere Rand dieses Divs soll oben 
+       am Bildschirm einrasten. */
+    scroll-snap-align: start;
+
+    /* Damit man den Effekt gut sieht: Volle Bildschirmhöhe (100vh) */
+    height: 100vh;
+    
+    /* Styling für Text-Zentrierung (nur für die Optik) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 2rem;
+    color: white;
+  }
+
+  /* Farben zur Unterscheidung */
+  .bg-blue { background-color: #3498db; }
+  .bg-red { background-color: #e74c3c; }
+  .bg-green { background-color: #2ecc71; }
+
+</style>
+</head>
+<body>
+
+  <div class="full-screen-section bg-blue">
+    Start (Scroll mal runter)
+  </div>
+
+  <div class="full-screen-section bg-red">
+    Ankerpunkt 2
+  </div>
+
+  <div class="full-screen-section bg-green">
+    Ankerpunkt 3
+  </div>
+
+</body>
+</html>
